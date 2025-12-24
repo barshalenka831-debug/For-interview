@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Beauty Parlour</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <a href="#contact" class="sticky-contact-btn">
+        <span>Book Now</span>
+        <i class="fas fa-calendar-alt"></i>
+    </a>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Beauty Parlour">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-banner" id="home">
+        <div class="banner-content">
+            <h1>Elevate Your Beauty</h1>
+            <p>Experience luxury and precision in our serene space</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Tailored treatments for your unique beauty</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/hair-services.jpg" alt="Hair Services">
+                    </div>
+                    <div class="service-content">
+                        <h3>Hair Styling</h3>
+                        <p>From precision cuts to luxurious coloring, our stylists create looks that complement your
+                            personality.</p>
+                        <a href="#contact" class="btn-secondary">Book Now</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/skin-care.jpg" alt="Skin Care">
+                    </div>
+                    <div class="service-content">
+                        <h3>Skin Care</h3>
+                        <p>Revitalize your skin with our expert facials and advanced treatments for a radiant
+                            complexion.</p>
+                        <a href="#contact" class="btn-secondary">Book Now</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/makeup.jpg" alt="Makeup">
+                    </div>
+                    <div class="service-content">
+                        <h3>Makeup Artistry</h3>
+                        <p>Professional makeup application for every occasion, enhancing your natural beauty.</p>
+                        <a href="#contact" class="btn-secondary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Beauty Parlour</h2>
+                <p>Founded in 2015, Lumiére Beauty Parlour has been dedicated to providing exceptional beauty services
+                    in a tranquil, luxurious environment. Our team of certified professionals stays at the forefront of
+                    beauty trends and techniques.</p>
+                <p>We believe in enhancing natural beauty through personalized treatments and premium products. Your
+                    comfort and satisfaction are our top priorities.</p>
+                <a href="Team.html" class="btn">Meet Our Team</a>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-grid">
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-form">
+                <h2>Book an Appointment</h2>
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Select a Service</option>
+                            <option value="hair">Hair Styling</option>
+                            <option value="skin">Skin Care</option>
+                            <option value="makeup">Makeup Artistry</option>
+                            <option value="other">Other Services</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Any special requests?" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Book Appointment</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Beauty Avenue, Khorda District, Bhubaneswar </p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 (999) 888-7777</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@beauty.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Monday - Saturday: 9AM - 8PM<br>Sunday: 10AM - 5PM</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt=" Beauty Parlour">
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Hair Styling</a></li>
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Makeup</a></li>
+                        <li><a href="#">Nail Art</a></li>
+                        <li><a href="#">Waxing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Beauty Parlour. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
